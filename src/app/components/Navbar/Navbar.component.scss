@@ -1,0 +1,54 @@
+$primary2-color: #ff7e05;
+$primary1-color: #02315E;
+
+$secondary1-color: #0096C7;
+$secondary2-color: #3A45E4FF;
+$secondary3-color: #4ebf59;
+
+
+
+$neutral1-color: #333;
+$neutral2-color: #666;
+$neutral3-color: #949494;
+$neutral4-color: #ddd;
+$neutral5-color: #fff;
+
+$pragraph-font: 'Poppins', sans-serif;
+$header-font:'Oswald', sans-serif;
+
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+.brand{
+  font-family: $header-font;
+  color: $primary2-color;
+  font-size: 32px;
+  font-weight: 600;
+
+}
+.search{
+background-color: $secondary1-color;
+color: $neutral5-color;
+height: 48px;
+width: 45px;
+
+}
+.container{    min-width: -webkit-fill-available;
+}
+.search-input {
+  height: 48px;
+  width: 257px;
+}
+a{
+  text-decoration: none;
+
+}
+.signup{
+  background-color: $secondary1-color;
+  color: $neutral5-color;
+}
+}
+.logo{
+  width: 165px;
+ }

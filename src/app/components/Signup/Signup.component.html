@@ -1,0 +1,176 @@
+<div class="container-fluid ps-md-0">
+  <div class="row g-0">
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="navbar-brand d-flex justify-content-around pb-5">
+            <img
+              src="assets/logo.png"
+              class="logo d-inline-block align-top"
+              alt=""
+            />
+
+            <div class="align-self-center">
+              <p class="signup">
+                have an account <a href="" routerLink="/Signin">Signin</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto pt-5">
+              <h3 class="login-heading mb-4">Create account</h3>
+
+              <form #f="ngForm">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Full name"
+                    ngModel
+                    #name="ngModel"
+                    name="fullname"
+                    required
+                  />
+                  <div class="alert alert-danger" *ngIf="name.invalid && name.touched">Full name is required</div>
+                  <label for="floatingInput">Full name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    ngModel
+                    #email="ngModel"
+                    name="email"
+                    required
+                    email
+                  />
+                  <div class="alert alert-danger" *ngIf="email.touched && email?.errors?.['required']">Email is required</div>
+                  <div class="alert alert-danger" *ngIf="email.touched && email?.errors?.['email']">Your input doesn't match the email format</div>
+
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    [type]="type"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    ngModel
+                    #password="ngModel"
+                    name="password"
+                    required
+                    minlength="8"
+                   />
+                   <div class="alert alert-danger" *ngIf="password.touched && password.errors?.['required']">Password is required</div>
+                   <div class="alert alert-danger" *ngIf="password.touched && password.errors?.['minlength']">Password should be 8+ characters</div>
+                  <span (click)="hidePass()" class="eye fa fa-eye-slash"></span>
+
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Confirm Password"
+                    ngModel
+                    name="confirmpassword"
+                    #confirmpassword="ngModel"
+                    required
+                  />
+                  <div class="alert alert-danger" *ngIf="confirmpassword.invalid && confirmpassword.touched">confirmed your password</div>
+                  <div class="alert alert-danger" *ngIf="confirmpassword.value !== password.value && confirmpassword.touched">  passwords are not equal</div>
+
+                  <span class="{{ eyeIcon }}"></span>
+                  <label for="floatingPassword">Confirm Password</label>
+                </div>
+
+                <div class="row justify-content-center form-group">
+                  <h4 class="select mb-1">Are you student or teacher?</h4>
+                  <div
+                    class="pb-4 pt-2 col-12 px-auto d-flex justify-content-evenly"
+                  >
+                    <div
+                      class="custom-control custom-radio custom-control-inline"
+                    >
+                      <input
+                        id="customRadioInline1"
+                        type="checkbox"
+                        name="customRadioInline1"
+                        class="custom-control-input form-check-input align-baseline me-1"
+                        checked="true"
+                      />
+                      <label
+                        for="customRadioInline1"
+                        class="fs-5 custom-control-label label-radio"
+                        >Teacher</label
+                      >
+                    </div>
+                    <div
+                      class="custom-control custom-radio custom-control-inline"
+                    >
+                      <input
+                        id="customRadioInline2"
+                        type="checkbox"
+                        name="customRadioInline1"
+                        class="custom-control-input form-check-input align-baseline me-1"
+                      />
+                      <label for="customRadioInline2" class="fs-5 label-radio"
+                        >Students</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="d-grid">
+                  <button
+                    class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
+                    type="submit"
+                    [disabled]="
+                      f.invalid || confirmpassword.value !== password.value
+                    "
+                  >
+                    Sign up
+                  </button>
+                </div>
+
+                <div class="text-capitalize text-center pb-3">
+                  or Sign up with
+                </div>
+                <div class="footer_social_area text-end text-center">
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Facebook"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Skype"
+                    ><i class="fa fa-google"></i></a
+                  ><a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Twitter"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+  </div>
+</div>

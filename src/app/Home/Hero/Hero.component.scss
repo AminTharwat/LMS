@@ -1,0 +1,83 @@
+$primary2-color: #ff7e05;
+$primary1-color: #02315E;
+$secondary1-color: #0096C7;
+$secondary2-color: #3A45E4FF;
+$secondary3-color: #4ebf59;
+$neutral1-color: #333;
+$neutral2-color: #666;
+$neutral3-color: #949494;
+$neutral4-color: #ddd;
+$neutral5-color: #fff;
+$pragraph-font: 'Poppins', sans-serif;
+$header-font:'Oswald', sans-serif;
+p {
+  margin: 0 0 20px;
+  line-height: 1.7;
+}
+p:last-child {
+  margin: 0px;
+}
+ul,
+ol {}
+a {
+  text-decoration: none;
+  color: #8d8f90;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #f85759;
+}
+.page-header {
+  background: url(https://cdn.shopify.com/s/files/1/0751/2807/8620/files/FAMA_Innovations.png?v=1685615445&width=1920) no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 70vh;
+  background-position: right;
+}
+.page-caption {
+  padding-top: 100px;
+  padding-bottom: 174px;
+}
+.page-title {
+  font-size: 65px;
+  line-height: 1;
+  font-family: $header-font;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+p{
+  font-family: $pragraph-font;
+  font-size: 18px;
+  color: $neutral4-color;
+
+}
+.card-section {
+  position: relative;
+  bottom: 80px;
+}
+.card {
+  background: rgb(255 255 255 / 61%);
+  height: 252px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.number {
+  font-family: $pragraph-font;
+  font-size: 40px;
+  font-weight: 200;
+}
+.card-icon {
+  font-size: 65px
+}
+
+@media (min-width: 768px){
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+}

@@ -1,0 +1,86 @@
+$primary2-color: #ff7e05;
+$primary1-color: #02315E;
+
+$secondary1-color: #0096C7;
+$secondary2-color: #3A45E4FF;
+$secondary3-color: #4ebf59;
+
+
+
+$neutral1-color: #333;
+$neutral2-color: #666;
+$neutral3-color: #949494;
+$neutral4-color: #ddd;
+$neutral5-color: #fff;
+
+$pragraph-font: 'Poppins', sans-serif;
+$header-font:'Oswald', sans-serif;
+
+.login {
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-image {
+  background-image: url('https://erepublic.brightspotcdn.com/dims4/default/451daaa/2147483647/strip/false/crop/3958x2639+0+0/resize/1486x991!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.amazonaws.com%2Fd0%2F97%2F90c8982040429bb7cee77c56e395%2Fhttps-download.shutterstock.com%2Fgatekeeper%2FW3siZCI6ICJzaHV0dGVyc3RvY2stbWVkaWEiLCAiayI6ICJwaG90by8xODY1OTU4MDMxL2h1Z2UuanBnIiwgImRjIjogImlkbF8xMjMiLCAiZSI6IDE2NDU2Njk5MTQsICJtIjogMX0sICIrS0kvN2RCVytLaTBkczZ6UFhGYU1kaFhzOG8iXQ%3D%3D%2Fshutterstock_1865958031.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 600;
+  font-family: $pragraph-font;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+.footer_social_area {
+  position: relative;
+  z-index: 1;
+}
+.footer_social_area a {
+  border-radius: 50%;
+  height: 40px;
+  text-align: center;
+  width: 40px;
+  display: inline-block;
+  background-color: #f5f5ff;
+  line-height: 40px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-right: 10px;
+}
+.footer_social_area a i {
+  line-height: 36px;
+}
+.footer_social_area a:hover,
+.footer_social_area a:focus {
+  color: #3767a7;
+}
+.logo{
+  width: 25%;
+  height: 25%;
+}
+.navbar-brand{
+  position: absolute;
+  top: 34px;
+}
+.signup{
+  font-size: 14px;
+font-family: $pragraph-font;
+}
+.select{
+   font-weight: 400;
+  font-size: 17px;
+}
+.eye{
+  position: absolute;
+  right: 12px;
+  top: 21px;
+}
+.form-floating{
+  position: relative;
+}

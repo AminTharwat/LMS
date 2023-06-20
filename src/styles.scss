@@ -1,1 +1,945 @@
 /* You can add global styles to this file, and also import other style files */
+$primary2-color: #ff7e05;
+$primary1-color: #02315E;
+
+$secondary1-color: #0096C7;
+$secondary2-color: #3A45E4FF;
+$secondary3-color: #4ebf59;
+
+
+
+$neutral1-color: #333;
+$neutral2-color: #666;
+$neutral3-color: #949494;
+$neutral4-color: #ddd;
+$neutral5-color: #fff;
+
+$pragraph-font: 'Poppins', sans-serif;
+$header-font:'Oswald', sans-serif;
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+.svg-icon.svg-icon-1 svg {
+  height: 1.75rem !important;
+  width: 1.75rem !important;
+}
+.svg-icon.svg-icon-2 svg {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+}
+.svg-icon.svg-icon-3 svg {
+  height: 1.35rem !important;
+  width: 1.35rem !important;
+}
+.svg-icon.svg-icon-4 svg {
+  height: 1.25rem !important;
+  width: 1.25rem !important;
+}
+.svg-icon.svg-icon-5 svg {
+  height: 1.15rem !important;
+  width: 1.15rem !important;
+}
+.svg-icon.svg-icon-6 svg {
+  height: 1.075rem !important;
+  width: 1.075rem !important;
+}
+.svg-icon.svg-icon-7 svg {
+  height: 0.95rem !important;
+  width: 0.95rem !important;
+}
+.svg-icon.svg-icon-8 svg {
+  height: 0.85rem !important;
+  width: 0.85rem !important;
+}
+.svg-icon.svg-icon-9 svg {
+  height: 0.75rem !important;
+  width: 0.75rem !important;
+}
+.svg-icon.svg-icon-10 svg {
+  height: 0.5rem !important;
+  width: 0.5rem !important;
+}
+.svg-icon.svg-icon-sm svg {
+  height: 0.95rem !important;
+  width: 0.95rem !important;
+}
+.svg-icon.svg-icon-base svg {
+  height: 1rem !important;
+  width: 1rem !important;
+}
+.svg-icon.svg-icon-lg svg {
+  height: 1.075rem !important;
+  width: 1.075rem !important;
+}
+.svg-icon.svg-icon-fluid svg {
+  height: 100% !important;
+  width: 100% !important;
+}
+.svg-icon.svg-icon-2x svg {
+  height: 2rem !important;
+  width: 2rem !important;
+}
+.svg-icon.svg-icon-2qx svg {
+  height: 2.25rem !important;
+  width: 2.25rem !important;
+}
+.svg-icon.svg-icon-2hx svg {
+  height: 2.5rem !important;
+  width: 2.5rem !important;
+}
+.svg-icon.svg-icon-2tx svg {
+  height: 2.75rem !important;
+  width: 2.75rem !important;
+}
+.svg-icon.svg-icon-3x svg {
+  height: 3rem !important;
+  width: 3rem !important;
+}
+.svg-icon.svg-icon-3qx svg {
+  height: 3.25rem !important;
+  width: 3.25rem !important;
+}
+.svg-icon.svg-icon-3hx svg {
+  height: 3.5rem !important;
+  width: 3.5rem !important;
+}
+.svg-icon.svg-icon-3tx svg {
+  height: 3.75rem !important;
+  width: 3.75rem !important;
+}
+.svg-icon.svg-icon-4x svg {
+  height: 4rem !important;
+  width: 4rem !important;
+}
+.svg-icon.svg-icon-4qx svg {
+  height: 4.25rem !important;
+  width: 4.25rem !important;
+}
+.svg-icon.svg-icon-4hx svg {
+  height: 4.5rem !important;
+  width: 4.5rem !important;
+}
+.svg-icon.svg-icon-4tx svg {
+  height: 4.75rem !important;
+  width: 4.75rem !important;
+}
+.svg-icon.svg-icon-5x svg {
+  height: 5rem !important;
+  width: 5rem !important;
+}
+.svg-icon.svg-icon-5qx svg {
+  height: 5.25rem !important;
+  width: 5.25rem !important;
+}
+.svg-icon.svg-icon-5hx svg {
+  height: 5.5rem !important;
+  width: 5.5rem !important;
+}
+.svg-icon.svg-icon-5tx svg {
+  height: 5.75rem !important;
+  width: 5.75rem !important;
+}
+.svg-icon.svg-icon-6x svg {
+  height: 6rem !important;
+  width: 6rem !important;
+}
+.svg-icon.svg-icon-6qx svg {
+  height: 6.25rem !important;
+  width: 6.25rem !important;
+}
+.svg-icon.svg-icon-6hx svg {
+  height: 6.5rem !important;
+  width: 6.5rem !important;
+}
+.svg-icon.svg-icon-6tx svg {
+  height: 6.75rem !important;
+  width: 6.75rem !important;
+}
+.svg-icon.svg-icon-7x svg {
+  height: 7rem !important;
+  width: 7rem !important;
+}
+.svg-icon.svg-icon-7qx svg {
+  height: 7.25rem !important;
+  width: 7.25rem !important;
+}
+.svg-icon.svg-icon-7hx svg {
+  height: 7.5rem !important;
+  width: 7.5rem !important;
+}
+.svg-icon.svg-icon-7tx svg {
+  height: 7.75rem !important;
+  width: 7.75rem !important;
+}
+@media (min-width: 576px) {
+  .svg-icon.svg-icon-sm-1 svg {
+    height: 1.75rem !important;
+    width: 1.75rem !important;
+  }
+  .svg-icon.svg-icon-sm-2 svg {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+  }
+  .svg-icon.svg-icon-sm-3 svg {
+    height: 1.35rem !important;
+    width: 1.35rem !important;
+  }
+  .svg-icon.svg-icon-sm-4 svg {
+    height: 1.25rem !important;
+    width: 1.25rem !important;
+  }
+  .svg-icon.svg-icon-sm-5 svg {
+    height: 1.15rem !important;
+    width: 1.15rem !important;
+  }
+  .svg-icon.svg-icon-sm-6 svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-sm-7 svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-sm-8 svg {
+    height: 0.85rem !important;
+    width: 0.85rem !important;
+  }
+  .svg-icon.svg-icon-sm-9 svg {
+    height: 0.75rem !important;
+    width: 0.75rem !important;
+  }
+  .svg-icon.svg-icon-sm-10 svg {
+    height: 0.5rem !important;
+    width: 0.5rem !important;
+  }
+  .svg-icon.svg-icon-sm-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-sm-base svg {
+    height: 1rem !important;
+    width: 1rem !important;
+  }
+  .svg-icon.svg-icon-sm-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-sm-fluid svg {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .svg-icon.svg-icon-sm-2x svg {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .svg-icon.svg-icon-sm-2qx svg {
+    height: 2.25rem !important;
+    width: 2.25rem !important;
+  }
+  .svg-icon.svg-icon-sm-2hx svg {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+  .svg-icon.svg-icon-sm-2tx svg {
+    height: 2.75rem !important;
+    width: 2.75rem !important;
+  }
+  .svg-icon.svg-icon-sm-3x svg {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+  .svg-icon.svg-icon-sm-3qx svg {
+    height: 3.25rem !important;
+    width: 3.25rem !important;
+  }
+  .svg-icon.svg-icon-sm-3hx svg {
+    height: 3.5rem !important;
+    width: 3.5rem !important;
+  }
+  .svg-icon.svg-icon-sm-3tx svg {
+    height: 3.75rem !important;
+    width: 3.75rem !important;
+  }
+  .svg-icon.svg-icon-sm-4x svg {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+  .svg-icon.svg-icon-sm-4qx svg {
+    height: 4.25rem !important;
+    width: 4.25rem !important;
+  }
+  .svg-icon.svg-icon-sm-4hx svg {
+    height: 4.5rem !important;
+    width: 4.5rem !important;
+  }
+  .svg-icon.svg-icon-sm-4tx svg {
+    height: 4.75rem !important;
+    width: 4.75rem !important;
+  }
+  .svg-icon.svg-icon-sm-5x svg {
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+  .svg-icon.svg-icon-sm-5qx svg {
+    height: 5.25rem !important;
+    width: 5.25rem !important;
+  }
+  .svg-icon.svg-icon-sm-5hx svg {
+    height: 5.5rem !important;
+    width: 5.5rem !important;
+  }
+  .svg-icon.svg-icon-sm-5tx svg {
+    height: 5.75rem !important;
+    width: 5.75rem !important;
+  }
+  .svg-icon.svg-icon-sm-6x svg {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
+  .svg-icon.svg-icon-sm-6qx svg {
+    height: 6.25rem !important;
+    width: 6.25rem !important;
+  }
+  .svg-icon.svg-icon-sm-6hx svg {
+    height: 6.5rem !important;
+    width: 6.5rem !important;
+  }
+  .svg-icon.svg-icon-sm-6tx svg {
+    height: 6.75rem !important;
+    width: 6.75rem !important;
+  }
+  .svg-icon.svg-icon-sm-7x svg {
+    height: 7rem !important;
+    width: 7rem !important;
+  }
+  .svg-icon.svg-icon-sm-7qx svg {
+    height: 7.25rem !important;
+    width: 7.25rem !important;
+  }
+  .svg-icon.svg-icon-sm-7hx svg {
+    height: 7.5rem !important;
+    width: 7.5rem !important;
+  }
+  .svg-icon.svg-icon-sm-7tx svg {
+    height: 7.75rem !important;
+    width: 7.75rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .svg-icon.svg-icon-md-1 svg {
+    height: 1.75rem !important;
+    width: 1.75rem !important;
+  }
+  .svg-icon.svg-icon-md-2 svg {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+  }
+  .svg-icon.svg-icon-md-3 svg {
+    height: 1.35rem !important;
+    width: 1.35rem !important;
+  }
+  .svg-icon.svg-icon-md-4 svg {
+    height: 1.25rem !important;
+    width: 1.25rem !important;
+  }
+  .svg-icon.svg-icon-md-5 svg {
+    height: 1.15rem !important;
+    width: 1.15rem !important;
+  }
+  .svg-icon.svg-icon-md-6 svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-md-7 svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-md-8 svg {
+    height: 0.85rem !important;
+    width: 0.85rem !important;
+  }
+  .svg-icon.svg-icon-md-9 svg {
+    height: 0.75rem !important;
+    width: 0.75rem !important;
+  }
+  .svg-icon.svg-icon-md-10 svg {
+    height: 0.5rem !important;
+    width: 0.5rem !important;
+  }
+  .svg-icon.svg-icon-md-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-md-base svg {
+    height: 1rem !important;
+    width: 1rem !important;
+  }
+  .svg-icon.svg-icon-md-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-md-fluid svg {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .svg-icon.svg-icon-md-2x svg {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .svg-icon.svg-icon-md-2qx svg {
+    height: 2.25rem !important;
+    width: 2.25rem !important;
+  }
+  .svg-icon.svg-icon-md-2hx svg {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+  .svg-icon.svg-icon-md-2tx svg {
+    height: 2.75rem !important;
+    width: 2.75rem !important;
+  }
+  .svg-icon.svg-icon-md-3x svg {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+  .svg-icon.svg-icon-md-3qx svg {
+    height: 3.25rem !important;
+    width: 3.25rem !important;
+  }
+  .svg-icon.svg-icon-md-3hx svg {
+    height: 3.5rem !important;
+    width: 3.5rem !important;
+  }
+  .svg-icon.svg-icon-md-3tx svg {
+    height: 3.75rem !important;
+    width: 3.75rem !important;
+  }
+  .svg-icon.svg-icon-md-4x svg {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+  .svg-icon.svg-icon-md-4qx svg {
+    height: 4.25rem !important;
+    width: 4.25rem !important;
+  }
+  .svg-icon.svg-icon-md-4hx svg {
+    height: 4.5rem !important;
+    width: 4.5rem !important;
+  }
+  .svg-icon.svg-icon-md-4tx svg {
+    height: 4.75rem !important;
+    width: 4.75rem !important;
+  }
+  .svg-icon.svg-icon-md-5x svg {
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+  .svg-icon.svg-icon-md-5qx svg {
+    height: 5.25rem !important;
+    width: 5.25rem !important;
+  }
+  .svg-icon.svg-icon-md-5hx svg {
+    height: 5.5rem !important;
+    width: 5.5rem !important;
+  }
+  .svg-icon.svg-icon-md-5tx svg {
+    height: 5.75rem !important;
+    width: 5.75rem !important;
+  }
+  .svg-icon.svg-icon-md-6x svg {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
+  .svg-icon.svg-icon-md-6qx svg {
+    height: 6.25rem !important;
+    width: 6.25rem !important;
+  }
+  .svg-icon.svg-icon-md-6hx svg {
+    height: 6.5rem !important;
+    width: 6.5rem !important;
+  }
+  .svg-icon.svg-icon-md-6tx svg {
+    height: 6.75rem !important;
+    width: 6.75rem !important;
+  }
+  .svg-icon.svg-icon-md-7x svg {
+    height: 7rem !important;
+    width: 7rem !important;
+  }
+  .svg-icon.svg-icon-md-7qx svg {
+    height: 7.25rem !important;
+    width: 7.25rem !important;
+  }
+  .svg-icon.svg-icon-md-7hx svg {
+    height: 7.5rem !important;
+    width: 7.5rem !important;
+  }
+  .svg-icon.svg-icon-md-7tx svg {
+    height: 7.75rem !important;
+    width: 7.75rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .svg-icon.svg-icon-lg-1 svg {
+    height: 1.75rem !important;
+    width: 1.75rem !important;
+  }
+  .svg-icon.svg-icon-lg-2 svg {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+  }
+  .svg-icon.svg-icon-lg-3 svg {
+    height: 1.35rem !important;
+    width: 1.35rem !important;
+  }
+  .svg-icon.svg-icon-lg-4 svg {
+    height: 1.25rem !important;
+    width: 1.25rem !important;
+  }
+  .svg-icon.svg-icon-lg-5 svg {
+    height: 1.15rem !important;
+    width: 1.15rem !important;
+  }
+  .svg-icon.svg-icon-lg-6 svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-lg-7 svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-lg-8 svg {
+    height: 0.85rem !important;
+    width: 0.85rem !important;
+  }
+  .svg-icon.svg-icon-lg-9 svg {
+    height: 0.75rem !important;
+    width: 0.75rem !important;
+  }
+  .svg-icon.svg-icon-lg-10 svg {
+    height: 0.5rem !important;
+    width: 0.5rem !important;
+  }
+  .svg-icon.svg-icon-lg-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-lg-base svg {
+    height: 1rem !important;
+    width: 1rem !important;
+  }
+  .svg-icon.svg-icon-lg-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-lg-fluid svg {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .svg-icon.svg-icon-lg-2x svg {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .svg-icon.svg-icon-lg-2qx svg {
+    height: 2.25rem !important;
+    width: 2.25rem !important;
+  }
+  .svg-icon.svg-icon-lg-2hx svg {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+  .svg-icon.svg-icon-lg-2tx svg {
+    height: 2.75rem !important;
+    width: 2.75rem !important;
+  }
+  .svg-icon.svg-icon-lg-3x svg {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+  .svg-icon.svg-icon-lg-3qx svg {
+    height: 3.25rem !important;
+    width: 3.25rem !important;
+  }
+  .svg-icon.svg-icon-lg-3hx svg {
+    height: 3.5rem !important;
+    width: 3.5rem !important;
+  }
+  .svg-icon.svg-icon-lg-3tx svg {
+    height: 3.75rem !important;
+    width: 3.75rem !important;
+  }
+  .svg-icon.svg-icon-lg-4x svg {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+  .svg-icon.svg-icon-lg-4qx svg {
+    height: 4.25rem !important;
+    width: 4.25rem !important;
+  }
+  .svg-icon.svg-icon-lg-4hx svg {
+    height: 4.5rem !important;
+    width: 4.5rem !important;
+  }
+  .svg-icon.svg-icon-lg-4tx svg {
+    height: 4.75rem !important;
+    width: 4.75rem !important;
+  }
+  .svg-icon.svg-icon-lg-5x svg {
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+  .svg-icon.svg-icon-lg-5qx svg {
+    height: 5.25rem !important;
+    width: 5.25rem !important;
+  }
+  .svg-icon.svg-icon-lg-5hx svg {
+    height: 5.5rem !important;
+    width: 5.5rem !important;
+  }
+  .svg-icon.svg-icon-lg-5tx svg {
+    height: 5.75rem !important;
+    width: 5.75rem !important;
+  }
+  .svg-icon.svg-icon-lg-6x svg {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
+  .svg-icon.svg-icon-lg-6qx svg {
+    height: 6.25rem !important;
+    width: 6.25rem !important;
+  }
+  .svg-icon.svg-icon-lg-6hx svg {
+    height: 6.5rem !important;
+    width: 6.5rem !important;
+  }
+  .svg-icon.svg-icon-lg-6tx svg {
+    height: 6.75rem !important;
+    width: 6.75rem !important;
+  }
+  .svg-icon.svg-icon-lg-7x svg {
+    height: 7rem !important;
+    width: 7rem !important;
+  }
+  .svg-icon.svg-icon-lg-7qx svg {
+    height: 7.25rem !important;
+    width: 7.25rem !important;
+  }
+  .svg-icon.svg-icon-lg-7hx svg {
+    height: 7.5rem !important;
+    width: 7.5rem !important;
+  }
+  .svg-icon.svg-icon-lg-7tx svg {
+    height: 7.75rem !important;
+    width: 7.75rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .svg-icon.svg-icon-xl-1 svg {
+    height: 1.75rem !important;
+    width: 1.75rem !important;
+  }
+  .svg-icon.svg-icon-xl-2 svg {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+  }
+  .svg-icon.svg-icon-xl-3 svg {
+    height: 1.35rem !important;
+    width: 1.35rem !important;
+  }
+  .svg-icon.svg-icon-xl-4 svg {
+    height: 1.25rem !important;
+    width: 1.25rem !important;
+  }
+  .svg-icon.svg-icon-xl-5 svg {
+    height: 1.15rem !important;
+    width: 1.15rem !important;
+  }
+  .svg-icon.svg-icon-xl-6 svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-xl-7 svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-xl-8 svg {
+    height: 0.85rem !important;
+    width: 0.85rem !important;
+  }
+  .svg-icon.svg-icon-xl-9 svg {
+    height: 0.75rem !important;
+    width: 0.75rem !important;
+  }
+  .svg-icon.svg-icon-xl-10 svg {
+    height: 0.5rem !important;
+    width: 0.5rem !important;
+  }
+  .svg-icon.svg-icon-xl-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-xl-base svg {
+    height: 1rem !important;
+    width: 1rem !important;
+  }
+  .svg-icon.svg-icon-xl-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-xl-fluid svg {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .svg-icon.svg-icon-xl-2x svg {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .svg-icon.svg-icon-xl-2qx svg {
+    height: 2.25rem !important;
+    width: 2.25rem !important;
+  }
+  .svg-icon.svg-icon-xl-2hx svg {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+  .svg-icon.svg-icon-xl-2tx svg {
+    height: 2.75rem !important;
+    width: 2.75rem !important;
+  }
+  .svg-icon.svg-icon-xl-3x svg {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+  .svg-icon.svg-icon-xl-3qx svg {
+    height: 3.25rem !important;
+    width: 3.25rem !important;
+  }
+  .svg-icon.svg-icon-xl-3hx svg {
+    height: 3.5rem !important;
+    width: 3.5rem !important;
+  }
+  .svg-icon.svg-icon-xl-3tx svg {
+    height: 3.75rem !important;
+    width: 3.75rem !important;
+  }
+  .svg-icon.svg-icon-xl-4x svg {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+  .svg-icon.svg-icon-xl-4qx svg {
+    height: 4.25rem !important;
+    width: 4.25rem !important;
+  }
+  .svg-icon.svg-icon-xl-4hx svg {
+    height: 4.5rem !important;
+    width: 4.5rem !important;
+  }
+  .svg-icon.svg-icon-xl-4tx svg {
+    height: 4.75rem !important;
+    width: 4.75rem !important;
+  }
+  .svg-icon.svg-icon-xl-5x svg {
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+  .svg-icon.svg-icon-xl-5qx svg {
+    height: 5.25rem !important;
+    width: 5.25rem !important;
+  }
+  .svg-icon.svg-icon-xl-5hx svg {
+    height: 5.5rem !important;
+    width: 5.5rem !important;
+  }
+  .svg-icon.svg-icon-xl-5tx svg {
+    height: 5.75rem !important;
+    width: 5.75rem !important;
+  }
+  .svg-icon.svg-icon-xl-6x svg {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
+  .svg-icon.svg-icon-xl-6qx svg {
+    height: 6.25rem !important;
+    width: 6.25rem !important;
+  }
+  .svg-icon.svg-icon-xl-6hx svg {
+    height: 6.5rem !important;
+    width: 6.5rem !important;
+  }
+  .svg-icon.svg-icon-xl-6tx svg {
+    height: 6.75rem !important;
+    width: 6.75rem !important;
+  }
+  .svg-icon.svg-icon-xl-7x svg {
+    height: 7rem !important;
+    width: 7rem !important;
+  }
+  .svg-icon.svg-icon-xl-7qx svg {
+    height: 7.25rem !important;
+    width: 7.25rem !important;
+  }
+  .svg-icon.svg-icon-xl-7hx svg {
+    height: 7.5rem !important;
+    width: 7.5rem !important;
+  }
+  .svg-icon.svg-icon-xl-7tx svg {
+    height: 7.75rem !important;
+    width: 7.75rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .svg-icon.svg-icon-xxl-1 svg {
+    height: 1.75rem !important;
+    width: 1.75rem !important;
+  }
+  .svg-icon.svg-icon-xxl-2 svg {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-3 svg {
+    height: 1.35rem !important;
+    width: 1.35rem !important;
+  }
+  .svg-icon.svg-icon-xxl-4 svg {
+    height: 1.25rem !important;
+    width: 1.25rem !important;
+  }
+  .svg-icon.svg-icon-xxl-5 svg {
+    height: 1.15rem !important;
+    width: 1.15rem !important;
+  }
+  .svg-icon.svg-icon-xxl-6 svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-xxl-7 svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-xxl-8 svg {
+    height: 0.85rem !important;
+    width: 0.85rem !important;
+  }
+  .svg-icon.svg-icon-xxl-9 svg {
+    height: 0.75rem !important;
+    width: 0.75rem !important;
+  }
+  .svg-icon.svg-icon-xxl-10 svg {
+    height: 0.5rem !important;
+    width: 0.5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
+  .svg-icon.svg-icon-xxl-base svg {
+    height: 1rem !important;
+    width: 1rem !important;
+  }
+  .svg-icon.svg-icon-xxl-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
+  }
+  .svg-icon.svg-icon-xxl-fluid svg {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .svg-icon.svg-icon-xxl-2x svg {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .svg-icon.svg-icon-xxl-2qx svg {
+    height: 2.25rem !important;
+    width: 2.25rem !important;
+  }
+  .svg-icon.svg-icon-xxl-2hx svg {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-2tx svg {
+    height: 2.75rem !important;
+    width: 2.75rem !important;
+  }
+  .svg-icon.svg-icon-xxl-3x svg {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+  .svg-icon.svg-icon-xxl-3qx svg {
+    height: 3.25rem !important;
+    width: 3.25rem !important;
+  }
+  .svg-icon.svg-icon-xxl-3hx svg {
+    height: 3.5rem !important;
+    width: 3.5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-3tx svg {
+    height: 3.75rem !important;
+    width: 3.75rem !important;
+  }
+  .svg-icon.svg-icon-xxl-4x svg {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+  .svg-icon.svg-icon-xxl-4qx svg {
+    height: 4.25rem !important;
+    width: 4.25rem !important;
+  }
+  .svg-icon.svg-icon-xxl-4hx svg {
+    height: 4.5rem !important;
+    width: 4.5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-4tx svg {
+    height: 4.75rem !important;
+    width: 4.75rem !important;
+  }
+  .svg-icon.svg-icon-xxl-5x svg {
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-5qx svg {
+    height: 5.25rem !important;
+    width: 5.25rem !important;
+  }
+  .svg-icon.svg-icon-xxl-5hx svg {
+    height: 5.5rem !important;
+    width: 5.5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-5tx svg {
+    height: 5.75rem !important;
+    width: 5.75rem !important;
+  }
+  .svg-icon.svg-icon-xxl-6x svg {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
+  .svg-icon.svg-icon-xxl-6qx svg {
+    height: 6.25rem !important;
+    width: 6.25rem !important;
+  }
+  .svg-icon.svg-icon-xxl-6hx svg {
+    height: 6.5rem !important;
+    width: 6.5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-6tx svg {
+    height: 6.75rem !important;
+    width: 6.75rem !important;
+  }
+  .svg-icon.svg-icon-xxl-7x svg {
+    height: 7rem !important;
+    width: 7rem !important;
+  }
+  .svg-icon.svg-icon-xxl-7qx svg {
+    height: 7.25rem !important;
+    width: 7.25rem !important;
+  }
+  .svg-icon.svg-icon-xxl-7hx svg {
+    height: 7.5rem !important;
+    width: 7.5rem !important;
+  }
+  .svg-icon.svg-icon-xxl-7tx svg {
+    height: 7.75rem !important;
+    width: 7.75rem !important;
+  }
+}
