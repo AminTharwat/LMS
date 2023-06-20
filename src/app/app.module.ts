@@ -11,12 +11,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAlertModule, NgbCollapseModule, NgbDateStructAdapter, NgbDropdownModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './Home/Home/Home.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './components/Signup/Signup.component';
+import { StudentDashboardComponent } from './components/Student-dashboard/Student-dashboard.component';
+import { MatCardModule } from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import { TeacherDashboardComponent } from './components/Teacher-dashboard/Teacher-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +35,9 @@ import { SignupComponent } from './components/Signup/Signup.component';
     WhyUsComponent,
     ReviewsComponent,
     SigninComponent,
-    SignupComponent
-
+    SignupComponent,
+    TeacherDashboardComponent,
+    StudentDashboardComponent
 
   ],
   schemas: [NO_ERRORS_SCHEMA],
@@ -46,6 +52,13 @@ import { SignupComponent } from './components/Signup/Signup.component';
      FormsModule,
      FormsModule,
      ReactiveFormsModule,
+     NgbPaginationModule,
+     NgbAlertModule,
+     NgbCollapseModule,
+     NgbDropdownModule,
+     MatCardModule,
+     MatDatepickerModule,
+     MatNativeDateModule
 
 
   ],

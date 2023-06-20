@@ -5,6 +5,7 @@ import { HomeComponent } from './Home/Home/Home.component';
 import { NgModule, signal } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './components/Navbar/Navbar.component';
+import { StudentDashboardComponent } from './components/Student-dashboard/Student-dashboard.component';
 
 const routes: Routes = [
 {path:'',redirectTo:'home',pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
 {path:'nav',component:NavbarComponent},
 {path:'hero',component:HeroComponent},
 {path:'signin',component:SigninComponent},
-{path:'signup',component:SignupComponent}
+{path:'signup',component:SignupComponent},
+{path:'dash',component:StudentDashboardComponent}
 
 ];
 

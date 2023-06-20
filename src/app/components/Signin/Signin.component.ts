@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./Signin.component.scss']
 })
 export class SigninComponent implements OnInit {
+  type:string='Password';
+  istext:Boolean=false;
+  eyeIcon:string='fa-eye-splash'
+    constructor() { }
 
-  constructor() { }
+    ngOnInit() {
+    }
 
-  ngOnInit() {
-  }
+    hidePass(){
+  this.istext=!this.istext;
+  this.istext ? this.eyeIcon ="fa-eye" : this.eyeIcon = this.eyeIcon;
+  this.istext ? this.type="text": this.type="password"
 
+}
 }

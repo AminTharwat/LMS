@@ -12,7 +12,7 @@
 
             <div class="align-self-center">
               <p class="signup">
-                have an account <a href="" routerLink="/Signin">Signin</a>
+                have an account <a href="" routerLink="/signin">Signin</a>
               </p>
             </div>
           </div>
@@ -89,42 +89,33 @@
                   <label for="floatingPassword">Confirm Password</label>
                 </div>
 
-                <div class="row justify-content-center form-group">
-                  <h4 class="select mb-1">Are you student or teacher?</h4>
-                  <div
-                    class="pb-4 pt-2 col-12 px-auto d-flex justify-content-evenly"
-                  >
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
-                      <input
-                        id="customRadioInline1"
-                        type="checkbox"
-                        name="customRadioInline1"
-                        class="custom-control-input form-check-input align-baseline me-1"
-                        checked="true"
-                      />
-                      <label
-                        for="customRadioInline1"
-                        class="fs-5 custom-control-label label-radio"
-                        >Teacher</label
-                      >
-                    </div>
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
-                      <input
-                        id="customRadioInline2"
-                        type="checkbox"
-                        name="customRadioInline1"
-                        class="custom-control-input form-check-input align-baseline me-1"
-                      />
-                      <label for="customRadioInline2" class="fs-5 label-radio"
-                        >Student</label
-                      >
-                    </div>
-                  </div>
-                </div>
+             <div class="row justify-content-center form-group">
+  <h4 class="select mb-1">Are you a student or teacher?</h4>
+  <div class="pb-4 pt-2 col-12 px-auto d-flex justify-content-evenly">
+    <div class="custom-control custom-radio custom-control-inline">
+      <input
+        id="teacher"
+        type="radio"
+        name="role"
+        class="custom-control-input form-check-input align-baseline me-1"
+      />
+      <label for="teacher" class="fs-5 custom-control-label label-radio"
+        >Teacher</label
+      >
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input
+        id="student"
+        type="radio"
+        name="role"
+        class="custom-control-input form-check-input align-baseline me-1"
+      />
+      <label for="student" class="fs-5 label-radio"
+        >Student</label
+      >
+    </div>
+  </div>
+</div>
                 <div class="d-grid">
                   <button
                     class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"

@@ -28,10 +28,10 @@ nav{
 
 }
 .search{
-background-color: $secondary1-color;
-color: $neutral5-color;
-height: 48px;
-width: 45px;
+  position: absolute;
+  right: 228px;
+  top: 18px;
+  color: #949494;
 
 }
 .container{    min-width: -webkit-fill-available;
@@ -52,3 +52,15 @@ a{
 .logo{
   width: 165px;
  }
+
+
+.cart , .bell , .user{
+color:#333;
+}
+
+
+.nav-item{
+  &:hover{
+  color: #ff7e05;
+}
+}

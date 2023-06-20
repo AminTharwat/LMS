@@ -25,17 +25,34 @@
                     type="email"
                     class="form-control"
                     id="floatingInput"
-                    placeholder="name@example.com"ngModel name="email" required
+                    placeholder="name@example.com"
+                    ngModel
+                    #email="ngModel"
+                    name="email"
+                    required
+                    email
                   />
+                  <div class="alert alert-danger" *ngIf="email.touched && email?.errors?.['required']">Email is required</div>
+                  <div class="alert alert-danger" *ngIf="email.touched && email?.errors?.['email']">Your input doesn't match the email format</div>
                   <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="floatingPassword"
-                    placeholder="Password" ngModel name="password" required
-                  />
+
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      [type]="type"
+                      class="form-control"
+                      id="floatingPassword"
+                      placeholder="Password"
+                      ngModel
+                      #password="ngModel"
+                      name="password"
+                      required
+                      minlength="8"
+                     />
+                     <div class="alert alert-danger" *ngIf="password.touched && password.errors?.['required']">Password is required</div>
+                     <div class="alert alert-danger" *ngIf="password.touched && password.errors?.['minlength']">Password should be 8+ characters</div>
+                    <span (click)="hidePass()" class="eye fa fa-eye-slash"></span>
+
                   <label for="floatingPassword">Password</label>
                 </div>
 
